@@ -1,79 +1,85 @@
-import time
 import traci
-sumoBin = '/home/linuxbrew/.linuxbrew/bin/sumo-gui'
-sumoCmd = [ sumoBin, '-c', 'handmade.sumocfg', 
-        #    '--start',
-            '--delay', '100' ]
 
-traci.start(sumoCmd)
+class TrafficController:
+    TOP    = 0
+    RIGHT  = 1
+    BOTTOM = 2
+    LEFT   = 3
+    def __init__(self):
+        self.sumoBin = '/home/linuxbrew/.linuxbrew/bin/sumo-gui'
+        self.sumoCmd = [self.sumoBin, '-c', 'handmade.sumocfg',
+                        '--delay', '100']
+        self.traffic_light_id = "center_traffic_light"
+        traci.start(self.sumoCmd)
 
-tls_ids = traci.trafficlight.getIDList()
-
-# Print all traffic light IDs
-print("Traffic Light IDs:")
-for tls_id in tls_ids:
-    print("-", tls_id, traci.trafficlight.getRedYellowGreenState(tls_id))
-
-traffic_light_id = "center_traffic_light"
-
-route_ids = traci.route.getIDList()
-
-# Print all route IDs
-
-print("Route IDs:")
-for route_id in route_ids:
-    print("-", route_id)
-else:
-    print("not routes available")
-
-NS = 4
-
-step = 0
-while step < 1000:
-    if step > 50:
-        lane_ids = traci.lane.getIDList()
-        print(lane_ids)
-        total_waiting_vehicles = 0
+    def get_lane_vehicle_counts(self):
+        lanes = {}
+        lane_ids = [lane_id for lane_id in traci.lane.getIDList() if "to_center" in lane_id]
         for lane_id in lane_ids:
-            waiting_vehicles = traci.lane.getLastStepHaltingNumber(lane_id)
-            total_waiting_vehicles += waiting_vehicles
-            print(waiting_vehicles, lane_id)
-        time.sleep(1)
-    
-    traci.simulationStep()
-    tls_state = traci.trafficlight.getRedYellowGreenState(traffic_light_id)
-    x = step % 16
-    t1 = "r" * NS
-    t2 = "r" * NS
-    t3 = "r" * NS
-    t4 = "r" * NS
-    if 0 < x < 3:
-        t4 = "r" * NS
-        t1 = "G" * NS
-    if 4 < x < 7:
-        t1 = "r" * NS
-        t2 = "G" * NS
-    if 8 < x < 12:
-        t2 = "r" * NS
-        t3 = "G" * NS
-    if 13 < x < 16:
-        t3 = "r" * NS
-        t4 = "G" * NS
-    new_tls_state = f"{t1}{t2}{t3}{t4}"
-    traci.trafficlight.setRedYellowGreenState(traffic_light_id, new_tls_state)
-    step += 1
+            lanes[lane_id] = traci.lane.getLastStepHaltingNumber(lane_id)
+        return lanes
 
+    def get_max_vehicle_lane(self, lanes):
+        key = list(lanes.keys())[0]
+        max_lane = {key: lanes[key]}
+        for key in lanes.keys():
+            if max_lane[list(max_lane.keys())[0]] < lanes[key]:
+                max_lane = {key: lanes[key]}
+        return max_lane
+
+    def empty_max_vehicle_lane(self, lane_and_number, step):
+        lane = list(lane_and_number.keys())[0]
+
+        NS = 4
+        laneTOP    = 'r' * NS
+        laneRIGHT  = 'r' * NS
+        laneBOTTOM = 'r' * NS
+        laneLEFT   = 'r' * NS
+
+        if "left" in lane:
+            laneTOP    = 'r' * NS
+            laneRIGHT  = 'r' * NS
+            laneBOTTOM = 'r' * NS
+            laneLEFT   = 'G' * NS
+        elif "right" in lane:
+            laneTOP    = 'r' * NS
+            laneRIGHT  = 'G' * NS
+            laneBOTTOM = 'r' * NS
+            laneLEFT   = 'r' * NS
+        elif "top" in lane:
+            laneTOP    = 'G' * NS
+            laneRIGHT  = 'r' * NS
+            laneBOTTOM = 'r' * NS
+            laneLEFT   = 'r' * NS
+        elif "bottom" in lane:
+            laneTOP    = 'r' * NS
+            laneRIGHT  = 'r' * NS
+            laneBOTTOM = 'G' * NS
+            laneLEFT   = 'r' * NS
+
+        traffic_program = f"{laneTOP}{laneRIGHT}{laneBOTTOM}{laneLEFT}"
+        # print(traffic_program)
+        try:
+            traci.trafficlight.setRedYellowGreenState(self.traffic_light_id, traffic_program)
+        except:
+            # print(traffic_program)
+            exit(0)
+        while traci.lane.getLastStepHaltingNumber(lane) > 0:
+            traci.simulationStep()
+            step += 1
+        return step
+
+    def run(self, duration=1000):
+        step = 0
+        while step < duration:
+            traci.simulationStep()
+            if step > 50:
+                lane_vehicle = self.get_lane_vehicle_counts()
+                max_lane = self.get_max_vehicle_lane(lane_vehicle)
+                step = self.empty_max_vehicle_lane(max_lane, step)
+            step += 1
+
+tc = TrafficController()
+tc.run(1000)
 traci.close()
-print("traci closed")
-# traci.start(sumoCmd)
-
-# tls_id = traci.trafficlight.getIDList()
-
-# for i in tls_id:
-#     print(f"{i=}")
-
-# while traci.simulation.getMinExpectedNumber():
-#     traci.simulationStep()
-
-#     traffic_light_id = 'J1'
-#     tls_state = traci.trafficlight.getRedYellowGreenState(traffic_light_id)
+print("Simulation finished.")
