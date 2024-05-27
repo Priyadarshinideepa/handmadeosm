@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-05-13 05:44:08 by Eclipse SUMO netedit Version 1.19.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="handmade.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="handmade.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="0"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.50"/>
+        <rectangular-lane-cut value="0"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="0"/>
+    </pedestrian>
+
+</configuration>
+-->
+
+<net version="1.16" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="0.00,200.00,200.00,400.00" origBoundary="0.00,0.00,400.00,400.00" projParameter="!"/>
+
+    <edge id=":bottom_left_turn_0" function="internal">
+        <lane id=":bottom_left_turn_0_0" index="0" speed="6.08" length="7.74" shape="-1.60,203.20 -1.30,201.10 -0.40,199.60 1.10,198.70 3.20,198.40"/>
+    </edge>
+    <edge id=":bottom_left_turn_1" function="internal">
+        <lane id=":bottom_left_turn_1_0" index="0" speed="3.65" length="1.44" shape="-1.60,203.20 -0.80,202.00"/>
+    </edge>
+    <edge id=":bottom_left_turn_4" function="internal">
+        <lane id=":bottom_left_turn_4_0" index="0" speed="3.65" length="3.23" shape="-0.80,202.00 0.00,201.60 0.80,202.00 1.60,203.20"/>
+    </edge>
+    <edge id=":bottom_left_turn_2" function="internal">
+        <lane id=":bottom_left_turn_2_0" index="0" speed="3.90" length="2.58" shape="3.20,201.60 2.50,201.70 2.00,202.00 1.70,202.50 1.60,203.20"/>
+    </edge>
+    <edge id=":bottom_left_turn_3" function="internal">
+        <lane id=":bottom_left_turn_3_0" index="0" speed="3.65" length="1.30" shape="3.20,201.60 2.12,200.88"/>
+    </edge>
+    <edge id=":bottom_left_turn_5" function="internal">
+        <lane id=":bottom_left_turn_5_0" index="0" speed="3.65" length="3.37" shape="2.12,200.88 2.00,200.80 1.60,200.00 2.00,199.20 3.20,198.40"/>
+    </edge>
+    <edge id=":bottom_right_turn_0" function="internal">
+        <lane id=":bottom_right_turn_0_0" index="0" speed="3.90" length="2.58" shape="198.40,203.20 198.30,202.50 198.00,202.00 197.50,201.70 196.80,201.60"/>
+    </edge>
+    <edge id=":bottom_right_turn_1" function="internal">
+        <lane id=":bottom_right_turn_1_0" index="0" speed="3.65" length="1.30" shape="198.40,203.20 199.12,202.12"/>
+    </edge>
+    <edge id=":bottom_right_turn_4" function="internal">
+        <lane id=":bottom_right_turn_4_0" index="0" speed="3.65" length="3.37" shape="199.12,202.12 199.20,202.00 200.00,201.60 200.80,202.00 201.60,203.20"/>
+    </edge>
+    <edge id=":bottom_right_turn_2" function="internal">
+        <lane id=":bottom_right_turn_2_0" index="0" speed="6.08" length="7.74" shape="196.80,198.40 198.90,198.70 200.40,199.60 201.30,201.10 201.60,203.20"/>
+    </edge>
+    <edge id=":bottom_right_turn_3" function="internal">
+        <lane id=":bottom_right_turn_3_0" index="0" speed="3.65" length="1.44" shape="196.80,198.40 198.00,199.20"/>
+    </edge>
+    <edge id=":bottom_right_turn_5" function="internal">
+        <lane id=":bottom_right_turn_5_0" index="0" speed="3.65" length="3.23" shape="198.00,199.20 198.40,200.00 198.00,200.80 196.80,201.60"/>
+    </edge>
+    <edge id=":bottom_traffic_light_0" function="internal">
+        <lane id=":bottom_traffic_light_0_0" index="0" speed="6.51" length="9.03" shape="98.40,207.20 98.05,204.75 97.00,203.00 95.25,201.95 92.80,201.60"/>
+    </edge>
+    <edge id=":bottom_traffic_light_1" function="internal">
+        <lane id=":bottom_traffic_light_1_0" index="0" speed="8.00" length="14.19" shape="98.40,207.20 98.95,203.35 100.60,200.60 103.35,198.95 107.20,198.40"/>
+    </edge>
+    <edge id=":bottom_traffic_light_2" function="internal">
+        <lane id=":bottom_traffic_light_2_0" index="0" speed="3.65" length="1.44" shape="98.40,207.20 99.20,206.00"/>
+    </edge>
+    <edge id=":bottom_traffic_light_9" function="internal">
+        <lane id=":bottom_traffic_light_9_0" index="0" speed="3.65" length="3.23" shape="99.20,206.00 100.00,205.60 100.80,206.00 101.60,207.20"/>
+    </edge>
+    <edge id=":bottom_traffic_light_3" function="internal">
+        <lane id=":bottom_traffic_light_3_0" index="0" speed="6.51" length="9.03" shape="107.20,201.60 104.75,201.95 103.00,203.00 101.95,204.75 101.60,207.20"/>
+    </edge>
+    <edge id=":bottom_traffic_light_4" function="internal">
+        <lane id=":bottom_traffic_light_4_0" index="0" speed="13.89" length="14.40" shape="107.20,201.60 92.80,201.60"/>
+    </edge>
+    <edge id=":bottom_traffic_light_5" function="internal">
+        <lane id=":bottom_traffic_light_5_0" index="0" speed="3.65" length="1.44" shape="107.20,201.60 106.00,200.80"/>
+    </edge>
+    <edge id=":bottom_traffic_light_10" function="internal">
+        <lane id=":bottom_traffic_light_10_0" index="0" speed="3.65" length="3.23" shape="106.00,200.80 105.60,200.00 106.00,199.20 107.20,198.40"/>
+    </edge>
+    <edge id=":bottom_traffic_light_6" function="internal">
+        <lane id=":bottom_traffic_light_6_0" index="0" speed="13.89" length="14.40" shape="92.80,198.40 107.20,198.40"/>
+    </edge>
+    <edge id=":bottom_traffic_light_7" function="internal">
+        <lane id=":bottom_traffic_light_7_0" index="0" speed="8.00" length="4.07" shape="92.80,198.40 96.65,198.95 96.80,199.04"/>
+    </edge>
+    <edge id=":bottom_traffic_light_8" function="internal">
+        <lane id=":bottom_traffic_light_8_0" index="0" speed="3.65" length="1.44" shape="92.80,198.40 94.00,199.20"/>
+    </edge>
+    <edge id=":bottom_traffic_light_11" function="internal">
+        <lane id=":bottom_traffic_light_11_0" index="0" speed="8.00" length="10.13" shape="96.80,199.04 99.40,200.60 101.05,203.35 101.60,207.20"/>
+    </edge>
+    <edge id=":bottom_traffic_light_12" function="internal">
+        <lane id=":bottom_traffic_light_12_0" index="0" speed="3.65" length="3.23" shape="94.00,199.20 94.40,200.00 94.00,200.80 92.80,201.60"/>
+    </edge>
+    <edge id=":center_traffic_light_0" function="internal">
+        <lane id=":center_traffic_light_0_0" index="0" speed="6.51" length="9.03" shape="98.40,307.20 98.05,304.75 97.00,303.00 95.25,301.95 92.80,301.60"/>
+    </edge>
+    <edge id=":center_traffic_light_1" function="internal">
+        <lane id=":center_traffic_light_1_0" index="0" speed="13.89" length="14.40" shape="98.40,307.20 98.40,292.80"/>
+    </edge>
+    <edge id=":center_traffic_light_2" function="internal">
+        <lane id=":center_traffic_light_2_0" index="0" speed="8.00" length="4.07" shape="98.40,307.20 98.95,303.35 99.04,303.20"/>
+    </edge>
+    <edge id=":center_traffic_light_3" function="internal">
+        <lane id=":center_traffic_light_3_0" index="0" speed="3.65" length="1.44" shape="98.40,307.20 99.20,306.00"/>
+    </edge>
+    <edge id=":center_traffic_light_16" function="internal">
+        <lane id=":center_traffic_light_16_0" index="0" speed="8.00" length="10.13" shape="99.04,303.20 100.60,300.60 103.35,298.95 107.20,298.40"/>
+    </edge>
+    <edge id=":center_traffic_light_17" function="internal">
+        <lane id=":center_traffic_light_17_0" index="0" speed="3.65" length="3.23" shape="99.20,306.00 100.00,305.60 100.80,306.00 101.60,307.20"/>
+    </edge>
+    <edge id=":center_traffic_light_4" function="internal">
+        <lane id=":center_traffic_light_4_0" index="0" speed="6.51" length="9.03" shape="107.20,301.60 104.75,301.95 103.00,303.00 101.95,304.75 101.60,307.20"/>
+    </edge>
+    <edge id=":center_traffic_light_5" function="internal">
+        <lane id=":center_traffic_light_5_0" index="0" speed="13.89" length="14.40" shape="107.20,301.60 92.80,301.60"/>
+    </edge>
+    <edge id=":center_traffic_light_6" function="internal">
+        <lane id=":center_traffic_light_6_0" index="0" speed="8.00" length="4.07" shape="107.20,301.60 103.35,301.05 103.20,300.96"/>
+    </edge>
+    <edge id=":center_traffic_light_7" function="internal">
+        <lane id=":center_traffic_light_7_0" index="0" speed="3.65" length="1.44" shape="107.20,301.60 106.00,300.80"/>
+    </edge>
+    <edge id=":center_traffic_light_18" function="internal">
+        <lane id=":center_traffic_light_18_0" index="0" speed="8.00" length="10.13" shape="103.20,300.96 100.60,299.40 98.95,296.65 98.40,292.80"/>
+    </edge>
+    <edge id=":center_traffic_light_19" function="internal">
+        <lane id=":center_traffic_light_19_0" index="0" speed="3.65" length="3.23" shape="106.00,300.80 105.60,300.00 106.00,299.20 107.20,298.40"/>
+    </edge>
+    <edge id=":center_traffic_light_8" function="internal">
+        <lane id=":center_traffic_light_8_0" index="0" speed="6.51" length="9.03" shape="101.60,292.80 101.95,295.25 103.00,297.00 104.75,298.05 107.20,298.40"/>
+    </edge>
+    <edge id=":center_traffic_light_9" function="internal">
+        <lane id=":center_traffic_light_9_0" index="0" speed="13.89" length="14.40" shape="101.60,292.80 101.60,307.20"/>
+    </edge>
+    <edge id=":center_traffic_light_10" function="internal">
+        <lane id=":center_traffic_light_10_0" index="0" speed="8.00" length="4.07" shape="101.60,292.80 101.05,296.65 100.96,296.80"/>
+    </edge>
+    <edge id=":center_traffic_light_11" function="internal">
+        <lane id=":center_traffic_light_11_0" index="0" speed="3.65" length="1.44" shape="101.60,292.80 100.80,294.00"/>
+    </edge>
+    <edge id=":center_traffic_light_20" function="internal">
+        <lane id=":center_traffic_light_20_0" index="0" speed="8.00" length="10.13" shape="100.96,296.80 99.40,299.40 96.65,301.05 92.80,301.60"/>
+    </edge>
+    <edge id=":center_traffic_light_21" function="internal">
+        <lane id=":center_traffic_light_21_0" index="0" speed="3.65" length="3.23" shape="100.80,294.00 100.00,294.40 99.20,294.00 98.40,292.80"/>
+    </edge>
+    <edge id=":center_traffic_light_12" function="internal">
+        <lane id=":center_traffic_light_12_0" index="0" speed="6.51" length="9.03" shape="92.80,298.40 95.25,298.05 97.00,297.00 98.05,295.25 98.40,292.80"/>
+    </edge>
+    <edge id=":center_traffic_light_13" function="internal">
+        <lane id=":center_traffic_light_13_0" index="0" speed="13.89" length="14.40" shape="92.80,298.40 107.20,298.40"/>
+    </edge>
+    <edge id=":center_traffic_light_14" function="internal">
+        <lane id=":center_traffic_light_14_0" index="0" speed="8.00" length="4.07" shape="92.80,298.40 96.65,298.95 96.80,299.04"/>
+    </edge>
+    <edge id=":center_traffic_light_15" function="internal">
+        <lane id=":center_traffic_light_15_0" index="0" speed="3.65" length="1.44" shape="92.80,298.40 94.00,299.20"/>
+    </edge>
+    <edge id=":center_traffic_light_22" function="internal">
+        <lane id=":center_traffic_light_22_0" index="0" speed="8.00" length="10.13" shape="96.80,299.04 99.40,300.60 101.05,303.35 101.60,307.20"/>
+    </edge>
+    <edge id=":center_traffic_light_23" function="internal">
+        <lane id=":center_traffic_light_23_0" index="0" speed="3.65" length="3.23" shape="94.00,299.20 94.40,300.00 94.00,300.80 92.80,301.60"/>
+    </edge>
+    <edge id=":left_traffic_light_0" function="internal">
+        <lane id=":left_traffic_light_0_0" index="0" speed="13.89" length="14.40" shape="-1.60,307.20 -1.60,292.80"/>
+    </edge>
+    <edge id=":left_traffic_light_1" function="internal">
+        <lane id=":left_traffic_light_1_0" index="0" speed="8.00" length="4.07" shape="-1.60,307.20 -1.05,303.35 -0.96,303.20"/>
+    </edge>
+    <edge id=":left_traffic_light_2" function="internal">
+        <lane id=":left_traffic_light_2_0" index="0" speed="3.65" length="1.44" shape="-1.60,307.20 -0.80,306.00"/>
+    </edge>
+    <edge id=":left_traffic_light_9" function="internal">
+        <lane id=":left_traffic_light_9_0" index="0" speed="8.00" length="10.13" shape="-0.96,303.20 0.60,300.60 3.35,298.95 7.20,298.40"/>
+    </edge>
+    <edge id=":left_traffic_light_10" function="internal">
+        <lane id=":left_traffic_light_10_0" index="0" speed="3.65" length="3.23" shape="-0.80,306.00 0.00,305.60 0.80,306.00 1.60,307.20"/>
+    </edge>
+    <edge id=":left_traffic_light_3" function="internal">
+        <lane id=":left_traffic_light_3_0" index="0" speed="6.51" length="9.03" shape="7.20,301.60 4.75,301.95 3.00,303.00 1.95,304.75 1.60,307.20"/>
+    </edge>
+    <edge id=":left_traffic_light_4" function="internal">
+        <lane id=":left_traffic_light_4_0" index="0" speed="8.00" length="14.19" shape="7.20,301.60 3.35,301.05 0.60,299.40 -1.05,296.65 -1.60,292.80"/>
+    </edge>
+    <edge id=":left_traffic_light_5" function="internal">
+        <lane id=":left_traffic_light_5_0" index="0" speed="3.65" length="1.44" shape="7.20,301.60 6.00,300.80"/>
+    </edge>
+    <edge id=":left_traffic_light_11" function="internal">
+        <lane id=":left_traffic_light_11_0" index="0" speed="3.65" length="3.23" shape="6.00,300.80 5.60,300.00 6.00,299.20 7.20,298.40"/>
+    </edge>
+    <edge id=":left_traffic_light_6" function="internal">
+        <lane id=":left_traffic_light_6_0" index="0" speed="6.51" length="9.03" shape="1.60,292.80 1.95,295.25 3.00,297.00 4.75,298.05 7.20,298.40"/>
+    </edge>
+    <edge id=":left_traffic_light_7" function="internal">
+        <lane id=":left_traffic_light_7_0" index="0" speed="13.89" length="14.40" shape="1.60,292.80 1.60,307.20"/>
+    </edge>
+    <edge id=":left_traffic_light_8" function="internal">
+        <lane id=":left_traffic_light_8_0" index="0" speed="3.65" length="1.44" shape="1.60,292.80 0.80,294.00"/>
+    </edge>
+    <edge id=":left_traffic_light_12" function="internal">
+        <lane id=":left_traffic_light_12_0" index="0" speed="3.65" length="3.23" shape="0.80,294.00 0.00,294.40 -0.80,294.00 -1.60,292.80"/>
+    </edge>
+    <edge id=":right_traffic_light_0" function="internal">
+        <lane id=":right_traffic_light_0_0" index="0" speed="6.51" length="9.03" shape="198.40,307.20 198.05,304.75 197.00,303.00 195.25,301.95 192.80,301.60"/>
+    </edge>
+    <edge id=":right_traffic_light_1" function="internal">
+        <lane id=":right_traffic_light_1_0" index="0" speed="13.89" length="14.40" shape="198.40,307.20 198.40,292.80"/>
+    </edge>
+    <edge id=":right_traffic_light_2" function="internal">
+        <lane id=":right_traffic_light_2_0" index="0" speed="3.65" length="1.44" shape="198.40,307.20 199.20,306.00"/>
+    </edge>
+    <edge id=":right_traffic_light_9" function="internal">
+        <lane id=":right_traffic_light_9_0" index="0" speed="3.65" length="3.23" shape="199.20,306.00 200.00,305.60 200.80,306.00 201.60,307.20"/>
+    </edge>
+    <edge id=":right_traffic_light_3" function="internal">
+        <lane id=":right_traffic_light_3_0" index="0" speed="13.89" length="14.40" shape="201.60,292.80 201.60,307.20"/>
+    </edge>
+    <edge id=":right_traffic_light_4" function="internal">
+        <lane id=":right_traffic_light_4_0" index="0" speed="8.00" length="4.07" shape="201.60,292.80 201.05,296.65 200.96,296.80"/>
+    </edge>
+    <edge id=":right_traffic_light_5" function="internal">
+        <lane id=":right_traffic_light_5_0" index="0" speed="3.65" length="1.44" shape="201.60,292.80 200.80,294.00"/>
+    </edge>
+    <edge id=":right_traffic_light_10" function="internal">
+        <lane id=":right_traffic_light_10_0" index="0" speed="8.00" length="10.13" shape="200.96,296.80 199.40,299.40 196.65,301.05 192.80,301.60"/>
+    </edge>
+    <edge id=":right_traffic_light_11" function="internal">
+        <lane id=":right_traffic_light_11_0" index="0" speed="3.65" length="3.23" shape="200.80,294.00 200.00,294.40 199.20,294.00 198.40,292.80"/>
+    </edge>
+    <edge id=":right_traffic_light_6" function="internal">
+        <lane id=":right_traffic_light_6_0" index="0" speed="6.51" length="9.03" shape="192.80,298.40 195.25,298.05 197.00,297.00 198.05,295.25 198.40,292.80"/>
+    </edge>
+    <edge id=":right_traffic_light_7" function="internal">
+        <lane id=":right_traffic_light_7_0" index="0" speed="8.00" length="14.19" shape="192.80,298.40 196.65,298.95 199.40,300.60 201.05,303.35 201.60,307.20"/>
+    </edge>
+    <edge id=":right_traffic_light_8" function="internal">
+        <lane id=":right_traffic_light_8_0" index="0" speed="3.65" length="1.44" shape="192.80,298.40 194.00,299.20"/>
+    </edge>
+    <edge id=":right_traffic_light_12" function="internal">
+        <lane id=":right_traffic_light_12_0" index="0" speed="3.65" length="3.23" shape="194.00,299.20 194.40,300.00 194.00,300.80 192.80,301.60"/>
+    </edge>
+    <edge id=":top_left_turn_0" function="internal">
+        <lane id=":top_left_turn_0_0" index="0" speed="6.08" length="7.74" shape="3.20,401.60 1.10,401.30 -0.40,400.40 -1.30,398.90 -1.60,396.80"/>
+    </edge>
+    <edge id=":top_left_turn_1" function="internal">
+        <lane id=":top_left_turn_1_0" index="0" speed="3.90" length="2.58" shape="1.60,396.80 1.70,397.50 2.00,398.00 2.50,398.30 3.20,398.40"/>
+    </edge>
+    <edge id=":top_right_turn_0" function="internal">
+        <lane id=":top_right_turn_0_0" index="0" speed="6.08" length="7.74" shape="201.60,396.80 201.30,398.90 200.40,400.40 198.90,401.30 196.80,401.60"/>
+    </edge>
+    <edge id=":top_right_turn_1" function="internal">
+        <lane id=":top_right_turn_1_0" index="0" speed="3.65" length="1.44" shape="201.60,396.80 200.80,398.00"/>
+    </edge>
+    <edge id=":top_right_turn_4" function="internal">
+        <lane id=":top_right_turn_4_0" index="0" speed="3.65" length="3.23" shape="200.80,398.00 200.00,398.40 199.20,398.00 198.40,396.80"/>
+    </edge>
+    <edge id=":top_right_turn_2" function="internal">
+        <lane id=":top_right_turn_2_0" index="0" speed="3.90" length="2.58" shape="196.80,398.40 197.50,398.30 198.00,398.00 198.30,397.50 198.40,396.80"/>
+    </edge>
+    <edge id=":top_right_turn_3" function="internal">
+        <lane id=":top_right_turn_3_0" index="0" speed="3.65" length="1.30" shape="196.80,398.40 197.88,399.12"/>
+    </edge>
+    <edge id=":top_right_turn_5" function="internal">
+        <lane id=":top_right_turn_5_0" index="0" speed="3.65" length="3.37" shape="197.88,399.12 198.00,399.20 198.40,400.00 198.00,400.80 196.80,401.60"/>
+    </edge>
+    <edge id=":top_traffic_light_0" function="internal">
+        <lane id=":top_traffic_light_0_0" index="0" speed="13.89" length="14.40" shape="107.20,401.60 92.80,401.60"/>
+    </edge>
+    <edge id=":top_traffic_light_1" function="internal">
+        <lane id=":top_traffic_light_1_0" index="0" speed="8.00" length="4.07" shape="107.20,401.60 103.35,401.05 103.20,400.96"/>
+    </edge>
+    <edge id=":top_traffic_light_2" function="internal">
+        <lane id=":top_traffic_light_2_0" index="0" speed="3.65" length="1.44" shape="107.20,401.60 106.00,400.80"/>
+    </edge>
+    <edge id=":top_traffic_light_9" function="internal">
+        <lane id=":top_traffic_light_9_0" index="0" speed="8.00" length="10.13" shape="103.20,400.96 100.60,399.40 98.95,396.65 98.40,392.80"/>
+    </edge>
+    <edge id=":top_traffic_light_10" function="internal">
+        <lane id=":top_traffic_light_10_0" index="0" speed="3.65" length="3.23" shape="106.00,400.80 105.60,400.00 106.00,399.20 107.20,398.40"/>
+    </edge>
+    <edge id=":top_traffic_light_3" function="internal">
+        <lane id=":top_traffic_light_3_0" index="0" speed="6.51" length="9.03" shape="101.60,392.80 101.95,395.25 103.00,397.00 104.75,398.05 107.20,398.40"/>
+    </edge>
+    <edge id=":top_traffic_light_4" function="internal">
+        <lane id=":top_traffic_light_4_0" index="0" speed="8.00" length="14.19" shape="101.60,392.80 101.05,396.65 99.40,399.40 96.65,401.05 92.80,401.60"/>
+    </edge>
+    <edge id=":top_traffic_light_5" function="internal">
+        <lane id=":top_traffic_light_5_0" index="0" speed="3.65" length="1.44" shape="101.60,392.80 100.80,394.00"/>
+    </edge>
+    <edge id=":top_traffic_light_11" function="internal">
+        <lane id=":top_traffic_light_11_0" index="0" speed="3.65" length="3.23" shape="100.80,394.00 100.00,394.40 99.20,394.00 98.40,392.80"/>
+    </edge>
+    <edge id=":top_traffic_light_6" function="internal">
+        <lane id=":top_traffic_light_6_0" index="0" speed="6.51" length="9.03" shape="92.80,398.40 95.25,398.05 97.00,397.00 98.05,395.25 98.40,392.80"/>
+    </edge>
+    <edge id=":top_traffic_light_7" function="internal">
+        <lane id=":top_traffic_light_7_0" index="0" speed="13.89" length="14.40" shape="92.80,398.40 107.20,398.40"/>
+    </edge>
+    <edge id=":top_traffic_light_8" function="internal">
+        <lane id=":top_traffic_light_8_0" index="0" speed="3.65" length="1.44" shape="92.80,398.40 94.00,399.20"/>
+    </edge>
+    <edge id=":top_traffic_light_12" function="internal">
+        <lane id=":top_traffic_light_12_0" index="0" speed="3.65" length="3.23" shape="94.00,399.20 94.40,400.00 94.00,400.80 92.80,401.60"/>
+    </edge>
+
+    <edge id="Left_to_topLeft" from="left_traffic_light" to="top_left_turn" priority="-1">
+        <lane id="Left_to_topLeft_0" index="0" speed="13.89" length="89.60" shape="1.60,307.20 1.60,396.80"/>
+    </edge>
+    <edge id="bottomLeft_to_left" from="bottom_left_turn" to="left_traffic_light" priority="-1">
+        <lane id="bottomLeft_to_left_0" index="0" speed="13.89" length="89.60" shape="1.60,203.20 1.60,292.80"/>
+    </edge>
+    <edge id="bottom_to_bottomLeft" from="bottom_traffic_light" to="bottom_left_turn" priority="-1">
+        <lane id="bottom_to_bottomLeft_0" index="0" speed="13.89" length="89.60" shape="92.80,201.60 3.20,201.60"/>
+    </edge>
+    <edge id="bottom_to_bottomRight" from="bottom_traffic_light" to="bottom_right_turn" priority="-1">
+        <lane id="bottom_to_bottomRight_0" index="0" speed="13.89" length="89.60" shape="107.20,198.40 196.80,198.40"/>
+    </edge>
+    <edge id="bottom_to_center" from="bottom_traffic_light" to="center_traffic_light" priority="-1">
+        <lane id="bottom_to_center_0" index="0" speed="13.89" length="85.60" shape="101.60,207.20 101.60,292.80"/>
+    </edge>
+    <edge id="bottomleft_to_bottom" from="bottom_left_turn" to="bottom_traffic_light" priority="-1">
+        <lane id="bottomleft_to_bottom_0" index="0" speed="13.89" length="89.60" shape="3.20,198.40 92.80,198.40"/>
+    </edge>
+    <edge id="bottomright_to_bottom" from="bottom_right_turn" to="bottom_traffic_light" priority="-1">
+        <lane id="bottomright_to_bottom_0" index="0" speed="13.89" length="89.60" shape="196.80,201.60 107.20,201.60"/>
+    </edge>
+    <edge id="bottomright_to_right" from="bottom_right_turn" to="right_traffic_light" priority="-1">
+        <lane id="bottomright_to_right_0" index="0" speed="13.89" length="89.60" shape="201.60,203.20 201.60,292.80"/>
+    </edge>
+    <edge id="center_to_bottom" from="center_traffic_light" to="bottom_traffic_light" priority="-1">
+        <lane id="center_to_bottom_0" index="0" speed="13.89" length="85.60" shape="98.40,292.80 98.40,207.20"/>
+    </edge>
+    <edge id="center_to_left" from="center_traffic_light" to="left_traffic_light" priority="-1">
+        <lane id="center_to_left_0" index="0" speed="13.89" length="85.60" shape="92.80,301.60 7.20,301.60"/>
+    </edge>
+    <edge id="center_to_right" from="center_traffic_light" to="right_traffic_light" priority="-1">
+        <lane id="center_to_right_0" index="0" speed="13.89" length="85.60" shape="107.20,298.40 192.80,298.40"/>
+    </edge>
+    <edge id="center_to_top" from="center_traffic_light" to="top_traffic_light" priority="-1">
+        <lane id="center_to_top_0" index="0" speed="13.89" length="85.60" shape="101.60,307.20 101.60,392.80"/>
+    </edge>
+    <edge id="left_to_bottomleft" from="left_traffic_light" to="bottom_left_turn" priority="-1">
+        <lane id="left_to_bottomleft_0" index="0" speed="13.89" length="89.60" shape="-1.60,292.80 -1.60,203.20"/>
+    </edge>
+    <edge id="left_to_center" from="left_traffic_light" to="center_traffic_light" priority="-1">
+        <lane id="left_to_center_0" index="0" speed="13.89" length="85.60" shape="7.20,298.40 92.80,298.40"/>
+    </edge>
+    <edge id="right_to_bottomright" from="right_traffic_light" to="bottom_right_turn" priority="-1">
+        <lane id="right_to_bottomright_0" index="0" speed="13.89" length="89.60" shape="198.40,292.80 198.40,203.20"/>
+    </edge>
+    <edge id="right_to_center" from="right_traffic_light" to="center_traffic_light" priority="-1">
+        <lane id="right_to_center_0" index="0" speed="13.89" length="85.60" shape="192.80,301.60 107.20,301.60"/>
+    </edge>
+    <edge id="right_to_topright" from="right_traffic_light" to="top_right_turn" priority="-1">
+        <lane id="right_to_topright_0" index="0" speed="13.89" length="89.60" shape="201.60,307.20 201.60,396.80"/>
+    </edge>
+    <edge id="topLeft_to_left" from="top_left_turn" to="left_traffic_light" priority="-1">
+        <lane id="topLeft_to_left_0" index="0" speed="13.89" length="89.60" shape="-1.60,396.80 -1.60,307.20"/>
+    </edge>
+    <edge id="topLeft_to_top" from="top_left_turn" to="top_traffic_light" priority="-1">
+        <lane id="topLeft_to_top_0" index="0" speed="13.89" length="89.60" shape="3.20,398.40 92.80,398.40"/>
+    </edge>
+    <edge id="top_to_center" from="top_traffic_light" to="center_traffic_light" priority="-1">
+        <lane id="top_to_center_0" index="0" speed="13.89" length="85.60" shape="98.40,392.80 98.40,307.20"/>
+    </edge>
+    <edge id="top_to_topLeft" from="top_traffic_light" to="top_left_turn" priority="-1">
+        <lane id="top_to_topLeft_0" index="0" speed="13.89" length="89.60" shape="92.80,401.60 3.20,401.60"/>
+    </edge>
+    <edge id="top_to_topright" from="top_traffic_light" to="top_right_turn" priority="-1">
+        <lane id="top_to_topright_0" index="0" speed="13.89" length="89.60" shape="107.20,398.40 196.80,398.40"/>
+    </edge>
+    <edge id="topright_to_right" from="top_right_turn" to="right_traffic_light" priority="-1">
+        <lane id="topright_to_right_0" index="0" speed="13.89" length="89.60" shape="198.40,396.80 198.40,307.20"/>
+    </edge>
+    <edge id="topright_to_top" from="top_right_turn" to="top_traffic_light" priority="-1">
+        <lane id="topright_to_top_0" index="0" speed="13.89" length="89.60" shape="196.80,401.60 107.20,401.60"/>
+    </edge>
+
+    <tlLogic id="bottom_traffic_light" type="static" programID="0" offset="0">
+        <phase duration="42" state="rrrGGgGgg"/>
+        <phase duration="3"  state="rrryyyyyy"/>
+        <phase duration="42" state="GGgGrrrrr"/>
+        <phase duration="3"  state="yyyyrrrrr"/>
+    </tlLogic>
+    <tlLogic id="center_traffic_light" type="static" programID="0" offset="0">
+        <phase duration="42" state="GGggrrrrGGggrrrr"/>
+        <phase duration="3"  state="yyyyrrrryyyyrrrr"/>
+        <phase duration="42" state="rrrrGGggrrrrGGgg"/>
+        <phase duration="3"  state="rrrryyyyrrrryyyy"/>
+    </tlLogic>
+    <tlLogic id="left_traffic_light" type="static" programID="0" offset="0">
+        <phase duration="42" state="GggrrrGGg"/>
+        <phase duration="3"  state="yyyrrryyy"/>
+        <phase duration="42" state="rrrGGgGrr"/>
+        <phase duration="3"  state="rrryyyyrr"/>
+    </tlLogic>
+    <tlLogic id="right_traffic_light" type="static" programID="0" offset="0">
+        <phase duration="42" state="GGgGggrrr"/>
+        <phase duration="3"  state="yyyyyyrrr"/>
+        <phase duration="42" state="GrrrrrGGg"/>
+        <phase duration="3"  state="yrrrrryyy"/>
+    </tlLogic>
+    <tlLogic id="top_traffic_light" type="static" programID="0" offset="0">
+        <phase duration="42" state="GggrrrGGg"/>
+        <phase duration="3"  state="yyyrrryyy"/>
+        <phase duration="42" state="rrrGGgGrr"/>
+        <phase duration="3"  state="rrryyyyrr"/>
+    </tlLogic>
+
+    <junction id="bottom_left_turn" type="priority" x="0.00" y="200.00" incLanes="left_to_bottomleft_0 bottom_to_bottomLeft_0" intLanes=":bottom_left_turn_0_0 :bottom_left_turn_4_0 :bottom_left_turn_2_0 :bottom_left_turn_5_0" shape="-3.20,203.20 3.20,203.20 3.20,196.80 -0.36,197.51 -1.60,198.40 -2.49,199.64 -3.02,201.24">
+        <request index="0" response="0000" foes="1000" cont="0"/>
+        <request index="1" response="0100" foes="0100" cont="1"/>
+        <request index="2" response="0000" foes="0010" cont="0"/>
+        <request index="3" response="0001" foes="0001" cont="1"/>
+    </junction>
+    <junction id="bottom_right_turn" type="priority" x="200.00" y="200.00" incLanes="right_to_bottomright_0 bottom_to_bottomRight_0" intLanes=":bottom_right_turn_0_0 :bottom_right_turn_4_0 :bottom_right_turn_2_0 :bottom_right_turn_5_0" shape="196.80,203.20 203.20,203.20 202.49,199.64 201.60,198.40 200.36,197.51 198.76,196.98 196.80,196.80">
+        <request index="0" response="0000" foes="1000" cont="0"/>
+        <request index="1" response="0100" foes="0100" cont="1"/>
+        <request index="2" response="0000" foes="0010" cont="0"/>
+        <request index="3" response="0001" foes="0001" cont="1"/>
+    </junction>
+    <junction id="bottom_traffic_light" type="traffic_light" x="100.00" y="200.00" incLanes="center_to_bottom_0 bottomright_to_bottom_0 bottomleft_to_bottom_0" intLanes=":bottom_traffic_light_0_0 :bottom_traffic_light_1_0 :bottom_traffic_light_9_0 :bottom_traffic_light_3_0 :bottom_traffic_light_4_0 :bottom_traffic_light_10_0 :bottom_traffic_light_6_0 :bottom_traffic_light_11_0 :bottom_traffic_light_12_0" shape="96.80,207.20 103.20,207.20 103.64,204.98 104.20,204.20 104.98,203.64 105.98,203.31 107.20,203.20 107.20,196.80 92.80,196.80 92.80,203.20 95.02,203.64 95.80,204.20 96.36,204.98 96.69,205.98">
+        <request index="0" response="000010000" foes="100010000" cont="0"/>
+        <request index="1" response="011010000" foes="011110000" cont="0"/>
+        <request index="2" response="010001000" foes="010001000" cont="1"/>
+        <request index="3" response="000000000" foes="010000100" cont="0"/>
+        <request index="4" response="000000000" foes="110000011" cont="0"/>
+        <request index="5" response="001000010" foes="001000010" cont="1"/>
+        <request index="6" response="000000000" foes="000100010" cont="0"/>
+        <request index="7" response="000011000" foes="000011110" cont="1"/>
+        <request index="8" response="000010001" foes="000010001" cont="1"/>
+    </junction>
+    <junction id="center_traffic_light" type="traffic_light" x="100.00" y="300.00" incLanes="top_to_center_0 right_to_center_0 bottom_to_center_0 left_to_center_0" intLanes=":center_traffic_light_0_0 :center_traffic_light_1_0 :center_traffic_light_16_0 :center_traffic_light_17_0 :center_traffic_light_4_0 :center_traffic_light_5_0 :center_traffic_light_18_0 :center_traffic_light_19_0 :center_traffic_light_8_0 :center_traffic_light_9_0 :center_traffic_light_20_0 :center_traffic_light_21_0 :center_traffic_light_12_0 :center_traffic_light_13_0 :center_traffic_light_22_0 :center_traffic_light_23_0" shape="96.80,307.20 103.20,307.20 103.64,304.98 104.20,304.20 104.98,303.64 105.98,303.31 107.20,303.20 107.20,296.80 104.98,296.36 104.20,295.80 103.64,295.02 103.31,294.02 103.20,292.80 96.80,292.80 96.36,295.02 95.80,295.80 95.02,296.36 94.02,296.69 92.80,296.80 92.80,303.20 95.02,303.64 95.80,304.20 96.36,304.98 96.69,305.98">
+        <request index="0"  response="0000000000000000" foes="1000010000100000" cont="0"/>
+        <request index="1"  response="0100000001000000" foes="0111110001100000" cont="0"/>
+        <request index="2"  response="0100001101000000" foes="0110011111100000" cont="1"/>
+        <request index="3"  response="0100001000010000" foes="0100001000010000" cont="1"/>
+        <request index="4"  response="0000001000000000" foes="0100001000001000" cont="0"/>
+        <request index="5"  response="0000011000000111" foes="1100011000000111" cont="0"/>
+        <request index="6"  response="0011011000000110" foes="0111111000000110" cont="1"/>
+        <request index="7"  response="0010000100000100" foes="0010000100000100" cont="1"/>
+        <request index="8"  response="0000000000000000" foes="0010000010000100" cont="0"/>
+        <request index="9"  response="0100000001000000" foes="0110000001111100" cont="0"/>
+        <request index="10" response="0100000001000111" foes="1110000001100111" cont="1"/>
+        <request index="11" response="0001000001000010" foes="0001000001000010" cont="1"/>
+        <request index="12" response="0000000000000010" foes="0000100001000010" cont="0"/>
+        <request index="13" response="0000011100000110" foes="0000011111000110" cont="0"/>
+        <request index="14" response="0000011001110110" foes="0000011001111110" cont="1"/>
+        <request index="15" response="0000010000100001" foes="0000010000100001" cont="1"/>
+    </junction>
+    <junction id="left_traffic_light" type="traffic_light" x="0.00" y="300.00" incLanes="topLeft_to_left_0 center_to_left_0 bottomLeft_to_left_0" intLanes=":left_traffic_light_0_0 :left_traffic_light_9_0 :left_traffic_light_10_0 :left_traffic_light_3_0 :left_traffic_light_4_0 :left_traffic_light_11_0 :left_traffic_light_6_0 :left_traffic_light_7_0 :left_traffic_light_12_0" shape="-3.20,307.20 3.20,307.20 3.64,304.98 4.20,304.20 4.98,303.64 5.98,303.31 7.20,303.20 7.20,296.80 4.98,296.36 4.20,295.80 3.64,295.02 3.31,294.02 3.20,292.80 -3.20,292.80">
+        <request index="0" response="000000000" foes="100010000" cont="0"/>
+        <request index="1" response="011000000" foes="011110000" cont="1"/>
+        <request index="2" response="010001000" foes="010001000" cont="1"/>
+        <request index="3" response="010000000" foes="010000100" cont="0"/>
+        <request index="4" response="010000011" foes="110000011" cont="0"/>
+        <request index="5" response="001000010" foes="001000010" cont="1"/>
+        <request index="6" response="000000000" foes="000100010" cont="0"/>
+        <request index="7" response="000000000" foes="000011110" cont="0"/>
+        <request index="8" response="000010001" foes="000010001" cont="1"/>
+    </junction>
+    <junction id="right_traffic_light" type="traffic_light" x="200.00" y="300.00" incLanes="topright_to_right_0 bottomright_to_right_0 center_to_right_0" intLanes=":right_traffic_light_0_0 :right_traffic_light_1_0 :right_traffic_light_9_0 :right_traffic_light_3_0 :right_traffic_light_10_0 :right_traffic_light_11_0 :right_traffic_light_6_0 :right_traffic_light_7_0 :right_traffic_light_12_0" shape="196.80,307.20 203.20,307.20 203.20,292.80 196.80,292.80 196.36,295.02 195.80,295.80 195.02,296.36 194.02,296.69 192.80,296.80 192.80,303.20 195.02,303.64 195.80,304.20 196.36,304.98 196.69,305.98">
+        <request index="0" response="000000000" foes="100010000" cont="0"/>
+        <request index="1" response="000000000" foes="011110000" cont="0"/>
+        <request index="2" response="010001000" foes="010001000" cont="1"/>
+        <request index="3" response="000000000" foes="010000100" cont="0"/>
+        <request index="4" response="000000011" foes="110000011" cont="1"/>
+        <request index="5" response="001000010" foes="001000010" cont="1"/>
+        <request index="6" response="000000010" foes="000100010" cont="0"/>
+        <request index="7" response="000011010" foes="000011110" cont="0"/>
+        <request index="8" response="000010001" foes="000010001" cont="1"/>
+    </junction>
+    <junction id="top_left_turn" type="priority" x="0.00" y="400.00" incLanes="top_to_topLeft_0 Left_to_topLeft_0" intLanes=":top_left_turn_0_0 :top_left_turn_1_0" shape="3.20,403.20 3.20,396.80 -3.20,396.80 -2.49,400.36 -1.60,401.60 -0.36,402.49 1.24,403.02">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="top_right_turn" type="priority" x="200.00" y="400.00" incLanes="right_to_topright_0 top_to_topright_0" intLanes=":top_right_turn_0_0 :top_right_turn_4_0 :top_right_turn_2_0 :top_right_turn_5_0" shape="203.20,396.80 196.80,396.80 196.80,403.20 200.36,402.49 201.60,401.60 202.49,400.36 203.02,398.76">
+        <request index="0" response="0000" foes="1000" cont="0"/>
+        <request index="1" response="0100" foes="0100" cont="1"/>
+        <request index="2" response="0000" foes="0010" cont="0"/>
+        <request index="3" response="0001" foes="0001" cont="1"/>
+    </junction>
+    <junction id="top_traffic_light" type="traffic_light" x="100.00" y="400.00" incLanes="topright_to_top_0 center_to_top_0 topLeft_to_top_0" intLanes=":top_traffic_light_0_0 :top_traffic_light_9_0 :top_traffic_light_10_0 :top_traffic_light_3_0 :top_traffic_light_4_0 :top_traffic_light_11_0 :top_traffic_light_6_0 :top_traffic_light_7_0 :top_traffic_light_12_0" shape="107.20,403.20 107.20,396.80 104.98,396.36 104.20,395.80 103.64,395.02 103.31,394.02 103.20,392.80 96.80,392.80 96.36,395.02 95.80,395.80 95.02,396.36 94.02,396.69 92.80,396.80 92.80,403.20">
+        <request index="0" response="000000000" foes="100010000" cont="0"/>
+        <request index="1" response="011000000" foes="011110000" cont="1"/>
+        <request index="2" response="010001000" foes="010001000" cont="1"/>
+        <request index="3" response="010000000" foes="010000100" cont="0"/>
+        <request index="4" response="010000011" foes="110000011" cont="0"/>
+        <request index="5" response="001000010" foes="001000010" cont="1"/>
+        <request index="6" response="000000000" foes="000100010" cont="0"/>
+        <request index="7" response="000000000" foes="000011110" cont="0"/>
+        <request index="8" response="000010001" foes="000010001" cont="1"/>
+    </junction>
+
+    <junction id=":bottom_left_turn_4_0" type="internal" x="-0.80" y="202.00" incLanes=":bottom_left_turn_1_0 bottom_to_bottomLeft_0" intLanes=":bottom_left_turn_2_0"/>
+    <junction id=":bottom_left_turn_5_0" type="internal" x="2.12" y="200.88" incLanes=":bottom_left_turn_3_0 left_to_bottomleft_0" intLanes=":bottom_left_turn_0_0"/>
+    <junction id=":bottom_right_turn_4_0" type="internal" x="199.12" y="202.12" incLanes=":bottom_right_turn_1_0 bottom_to_bottomRight_0" intLanes=":bottom_right_turn_2_0"/>
+    <junction id=":bottom_right_turn_5_0" type="internal" x="198.00" y="199.20" incLanes=":bottom_right_turn_3_0 right_to_bottomright_0" intLanes=":bottom_right_turn_0_0"/>
+    <junction id=":bottom_traffic_light_9_0" type="internal" x="99.20" y="206.00" incLanes=":bottom_traffic_light_2_0 bottomleft_to_bottom_0 bottomright_to_bottom_0" intLanes=":bottom_traffic_light_3_0 :bottom_traffic_light_7_0"/>
+    <junction id=":bottom_traffic_light_10_0" type="internal" x="106.00" y="200.80" incLanes=":bottom_traffic_light_5_0 bottomleft_to_bottom_0 center_to_bottom_0" intLanes=":bottom_traffic_light_1_0 :bottom_traffic_light_6_0"/>
+    <junction id=":bottom_traffic_light_11_0" type="internal" x="96.80" y="199.04" incLanes=":bottom_traffic_light_7_0 bottomright_to_bottom_0" intLanes=":bottom_traffic_light_1_0 :bottom_traffic_light_2_0 :bottom_traffic_light_3_0 :bottom_traffic_light_4_0"/>
+    <junction id=":bottom_traffic_light_12_0" type="internal" x="94.00" y="199.20" incLanes=":bottom_traffic_light_8_0 bottomright_to_bottom_0 center_to_bottom_0" intLanes=":bottom_traffic_light_0_0 :bottom_traffic_light_4_0"/>
+    <junction id=":center_traffic_light_16_0" type="internal" x="99.04" y="303.20" incLanes=":center_traffic_light_2_0 bottom_to_center_0" intLanes=":center_traffic_light_5_0 :center_traffic_light_6_0 :center_traffic_light_7_0 :center_traffic_light_8_0 :center_traffic_light_9_0 :center_traffic_light_13_0 :center_traffic_light_14_0"/>
+    <junction id=":center_traffic_light_17_0" type="internal" x="99.20" y="306.00" incLanes=":center_traffic_light_3_0 bottom_to_center_0 left_to_center_0 right_to_center_0" intLanes=":center_traffic_light_4_0 :center_traffic_light_9_0 :center_traffic_light_14_0"/>
+    <junction id=":center_traffic_light_18_0" type="internal" x="103.20" y="300.96" incLanes=":center_traffic_light_6_0 left_to_center_0" intLanes=":center_traffic_light_1_0 :center_traffic_light_2_0 :center_traffic_light_9_0 :center_traffic_light_10_0 :center_traffic_light_11_0 :center_traffic_light_12_0 :center_traffic_light_13_0"/>
+    <junction id=":center_traffic_light_19_0" type="internal" x="106.00" y="300.80" incLanes=":center_traffic_light_7_0 bottom_to_center_0 left_to_center_0 top_to_center_0" intLanes=":center_traffic_light_2_0 :center_traffic_light_8_0 :center_traffic_light_13_0"/>
+    <junction id=":center_traffic_light_20_0" type="internal" x="100.96" y="296.80" incLanes=":center_traffic_light_10_0 top_to_center_0" intLanes=":center_traffic_light_0_0 :center_traffic_light_1_0 :center_traffic_light_5_0 :center_traffic_light_6_0 :center_traffic_light_13_0 :center_traffic_light_14_0 :center_traffic_light_15_0"/>
+    <junction id=":center_traffic_light_21_0" type="internal" x="100.80" y="294.00" incLanes=":center_traffic_light_11_0 left_to_center_0 right_to_center_0 top_to_center_0" intLanes=":center_traffic_light_1_0 :center_traffic_light_6_0 :center_traffic_light_12_0"/>
+    <junction id=":center_traffic_light_22_0" type="internal" x="96.80" y="299.04" incLanes=":center_traffic_light_14_0 right_to_center_0" intLanes=":center_traffic_light_1_0 :center_traffic_light_2_0 :center_traffic_light_3_0 :center_traffic_light_4_0 :center_traffic_light_5_0 :center_traffic_light_9_0 :center_traffic_light_10_0"/>
+    <junction id=":center_traffic_light_23_0" type="internal" x="94.00" y="299.20" incLanes=":center_traffic_light_15_0 bottom_to_center_0 right_to_center_0 top_to_center_0" intLanes=":center_traffic_light_0_0 :center_traffic_light_5_0 :center_traffic_light_10_0"/>
+    <junction id=":left_traffic_light_9_0" type="internal" x="-0.96" y="303.20" incLanes=":left_traffic_light_1_0 bottomLeft_to_left_0" intLanes=":left_traffic_light_4_0 :left_traffic_light_5_0 :left_traffic_light_6_0 :left_traffic_light_7_0"/>
+    <junction id=":left_traffic_light_10_0" type="internal" x="-0.80" y="306.00" incLanes=":left_traffic_light_2_0 bottomLeft_to_left_0 center_to_left_0" intLanes=":left_traffic_light_3_0 :left_traffic_light_7_0"/>
+    <junction id=":left_traffic_light_11_0" type="internal" x="6.00" y="300.80" incLanes=":left_traffic_light_5_0 bottomLeft_to_left_0 topLeft_to_left_0" intLanes=":left_traffic_light_1_0 :left_traffic_light_6_0"/>
+    <junction id=":left_traffic_light_12_0" type="internal" x="0.80" y="294.00" incLanes=":left_traffic_light_8_0 center_to_left_0 topLeft_to_left_0" intLanes=":left_traffic_light_0_0 :left_traffic_light_4_0"/>
+    <junction id=":right_traffic_light_9_0" type="internal" x="199.20" y="306.00" incLanes=":right_traffic_light_2_0 bottomright_to_right_0 center_to_right_0" intLanes=":right_traffic_light_3_0 :right_traffic_light_7_0"/>
+    <junction id=":right_traffic_light_10_0" type="internal" x="200.96" y="296.80" incLanes=":right_traffic_light_4_0 topright_to_right_0" intLanes=":right_traffic_light_0_0 :right_traffic_light_1_0 :right_traffic_light_7_0 :right_traffic_light_8_0"/>
+    <junction id=":right_traffic_light_11_0" type="internal" x="200.80" y="294.00" incLanes=":right_traffic_light_5_0 center_to_right_0 topright_to_right_0" intLanes=":right_traffic_light_1_0 :right_traffic_light_6_0"/>
+    <junction id=":right_traffic_light_12_0" type="internal" x="194.00" y="299.20" incLanes=":right_traffic_light_8_0 bottomright_to_right_0 topright_to_right_0" intLanes=":right_traffic_light_0_0 :right_traffic_light_4_0"/>
+    <junction id=":top_right_turn_4_0" type="internal" x="200.80" y="398.00" incLanes=":top_right_turn_1_0 top_to_topright_0" intLanes=":top_right_turn_2_0"/>
+    <junction id=":top_right_turn_5_0" type="internal" x="197.88" y="399.12" incLanes=":top_right_turn_3_0 right_to_topright_0" intLanes=":top_right_turn_0_0"/>
+    <junction id=":top_traffic_light_9_0" type="internal" x="103.20" y="400.96" incLanes=":top_traffic_light_1_0 topLeft_to_top_0" intLanes=":top_traffic_light_4_0 :top_traffic_light_5_0 :top_traffic_light_6_0 :top_traffic_light_7_0"/>
+    <junction id=":top_traffic_light_10_0" type="internal" x="106.00" y="400.80" incLanes=":top_traffic_light_2_0 center_to_top_0 topLeft_to_top_0" intLanes=":top_traffic_light_3_0 :top_traffic_light_7_0"/>
+    <junction id=":top_traffic_light_11_0" type="internal" x="100.80" y="394.00" incLanes=":top_traffic_light_5_0 topLeft_to_top_0 topright_to_top_0" intLanes=":top_traffic_light_1_0 :top_traffic_light_6_0"/>
+    <junction id=":top_traffic_light_12_0" type="internal" x="94.00" y="399.20" incLanes=":top_traffic_light_8_0 center_to_top_0 topright_to_top_0" intLanes=":top_traffic_light_0_0 :top_traffic_light_4_0"/>
+
+    <connection from="Left_to_topLeft" to="topLeft_to_top" fromLane="0" toLane="0" via=":top_left_turn_1_0" dir="r" state="M"/>
+    <connection from="bottomLeft_to_left" to="left_to_center" fromLane="0" toLane="0" via=":left_traffic_light_6_0" tl="left_traffic_light" linkIndex="6" dir="r" state="O"/>
+    <connection from="bottomLeft_to_left" to="Left_to_topLeft" fromLane="0" toLane="0" via=":left_traffic_light_7_0" tl="left_traffic_light" linkIndex="7" dir="s" state="O"/>
+    <connection from="bottomLeft_to_left" to="left_to_bottomleft" fromLane="0" toLane="0" via=":left_traffic_light_8_0" tl="left_traffic_light" linkIndex="8" dir="t" state="o"/>
+    <connection from="bottom_to_bottomLeft" to="bottomLeft_to_left" fromLane="0" toLane="0" via=":bottom_left_turn_2_0" dir="r" state="M"/>
+    <connection from="bottom_to_bottomLeft" to="bottomleft_to_bottom" fromLane="0" toLane="0" via=":bottom_left_turn_3_0" dir="t" state="m"/>
+    <connection from="bottom_to_bottomRight" to="bottomright_to_right" fromLane="0" toLane="0" keepClear="0" via=":bottom_right_turn_2_0" dir="l" state="M"/>
+    <connection from="bottom_to_bottomRight" to="bottomright_to_bottom" fromLane="0" toLane="0" via=":bottom_right_turn_3_0" dir="t" state="m"/>
+    <connection from="bottom_to_center" to="center_to_right" fromLane="0" toLane="0" via=":center_traffic_light_8_0" tl="center_traffic_light" linkIndex="8" dir="r" state="O"/>
+    <connection from="bottom_to_center" to="center_to_top" fromLane="0" toLane="0" via=":center_traffic_light_9_0" tl="center_traffic_light" linkIndex="9" dir="s" state="O"/>
+    <connection from="bottom_to_center" to="center_to_left" fromLane="0" toLane="0" via=":center_traffic_light_10_0" tl="center_traffic_light" linkIndex="10" dir="l" state="o"/>
+    <connection from="bottom_to_center" to="center_to_bottom" fromLane="0" toLane="0" via=":center_traffic_light_11_0" tl="center_traffic_light" linkIndex="11" dir="t" state="o"/>
+    <connection from="bottomleft_to_bottom" to="bottom_to_bottomRight" fromLane="0" toLane="0" via=":bottom_traffic_light_6_0" tl="bottom_traffic_light" linkIndex="6" dir="s" state="O"/>
+    <connection from="bottomleft_to_bottom" to="bottom_to_center" fromLane="0" toLane="0" via=":bottom_traffic_light_7_0" tl="bottom_traffic_light" linkIndex="7" dir="l" state="o"/>
+    <connection from="bottomleft_to_bottom" to="bottom_to_bottomLeft" fromLane="0" toLane="0" via=":bottom_traffic_light_8_0" tl="bottom_traffic_light" linkIndex="8" dir="t" state="o"/>
+    <connection from="bottomright_to_bottom" to="bottom_to_center" fromLane="0" toLane="0" via=":bottom_traffic_light_3_0" tl="bottom_traffic_light" linkIndex="3" dir="r" state="O"/>
+    <connection from="bottomright_to_bottom" to="bottom_to_bottomLeft" fromLane="0" toLane="0" via=":bottom_traffic_light_4_0" tl="bottom_traffic_light" linkIndex="4" dir="s" state="O"/>
+    <connection from="bottomright_to_bottom" to="bottom_to_bottomRight" fromLane="0" toLane="0" via=":bottom_traffic_light_5_0" tl="bottom_traffic_light" linkIndex="5" dir="t" state="o"/>
+    <connection from="bottomright_to_right" to="right_to_topright" fromLane="0" toLane="0" via=":right_traffic_light_3_0" tl="right_traffic_light" linkIndex="3" dir="s" state="O"/>
+    <connection from="bottomright_to_right" to="right_to_center" fromLane="0" toLane="0" via=":right_traffic_light_4_0" tl="right_traffic_light" linkIndex="4" dir="l" state="o"/>
+    <connection from="bottomright_to_right" to="right_to_bottomright" fromLane="0" toLane="0" via=":right_traffic_light_5_0" tl="right_traffic_light" linkIndex="5" dir="t" state="o"/>
+    <connection from="center_to_bottom" to="bottom_to_bottomLeft" fromLane="0" toLane="0" via=":bottom_traffic_light_0_0" tl="bottom_traffic_light" linkIndex="0" dir="r" state="o"/>
+    <connection from="center_to_bottom" to="bottom_to_bottomRight" fromLane="0" toLane="0" via=":bottom_traffic_light_1_0" tl="bottom_traffic_light" linkIndex="1" dir="l" state="o"/>
+    <connection from="center_to_bottom" to="bottom_to_center" fromLane="0" toLane="0" via=":bottom_traffic_light_2_0" tl="bottom_traffic_light" linkIndex="2" dir="t" state="o"/>
+    <connection from="center_to_left" to="Left_to_topLeft" fromLane="0" toLane="0" via=":left_traffic_light_3_0" tl="left_traffic_light" linkIndex="3" dir="r" state="o"/>
+    <connection from="center_to_left" to="left_to_bottomleft" fromLane="0" toLane="0" via=":left_traffic_light_4_0" tl="left_traffic_light" linkIndex="4" dir="l" state="o"/>
+    <connection from="center_to_left" to="left_to_center" fromLane="0" toLane="0" via=":left_traffic_light_5_0" tl="left_traffic_light" linkIndex="5" dir="t" state="o"/>
+    <connection from="center_to_right" to="right_to_bottomright" fromLane="0" toLane="0" via=":right_traffic_light_6_0" tl="right_traffic_light" linkIndex="6" dir="r" state="o"/>
+    <connection from="center_to_right" to="right_to_topright" fromLane="0" toLane="0" via=":right_traffic_light_7_0" tl="right_traffic_light" linkIndex="7" dir="l" state="o"/>
+    <connection from="center_to_right" to="right_to_center" fromLane="0" toLane="0" via=":right_traffic_light_8_0" tl="right_traffic_light" linkIndex="8" dir="t" state="o"/>
+    <connection from="center_to_top" to="top_to_topright" fromLane="0" toLane="0" via=":top_traffic_light_3_0" tl="top_traffic_light" linkIndex="3" dir="r" state="o"/>
+    <connection from="center_to_top" to="top_to_topLeft" fromLane="0" toLane="0" via=":top_traffic_light_4_0" tl="top_traffic_light" linkIndex="4" dir="l" state="o"/>
+    <connection from="center_to_top" to="top_to_center" fromLane="0" toLane="0" via=":top_traffic_light_5_0" tl="top_traffic_light" linkIndex="5" dir="t" state="o"/>
+    <connection from="left_to_bottomleft" to="bottomleft_to_bottom" fromLane="0" toLane="0" via=":bottom_left_turn_0_0" dir="l" state="M"/>
+    <connection from="left_to_bottomleft" to="bottomLeft_to_left" fromLane="0" toLane="0" via=":bottom_left_turn_1_0" dir="t" state="m"/>
+    <connection from="left_to_center" to="center_to_bottom" fromLane="0" toLane="0" via=":center_traffic_light_12_0" tl="center_traffic_light" linkIndex="12" dir="r" state="o"/>
+    <connection from="left_to_center" to="center_to_right" fromLane="0" toLane="0" via=":center_traffic_light_13_0" tl="center_traffic_light" linkIndex="13" dir="s" state="o"/>
+    <connection from="left_to_center" to="center_to_top" fromLane="0" toLane="0" via=":center_traffic_light_14_0" tl="center_traffic_light" linkIndex="14" dir="l" state="o"/>
+    <connection from="left_to_center" to="center_to_left" fromLane="0" toLane="0" via=":center_traffic_light_15_0" tl="center_traffic_light" linkIndex="15" dir="t" state="o"/>
+    <connection from="right_to_bottomright" to="bottomright_to_bottom" fromLane="0" toLane="0" keepClear="0" via=":bottom_right_turn_0_0" dir="r" state="M"/>
+    <connection from="right_to_bottomright" to="bottomright_to_right" fromLane="0" toLane="0" via=":bottom_right_turn_1_0" dir="t" state="m"/>
+    <connection from="right_to_center" to="center_to_top" fromLane="0" toLane="0" via=":center_traffic_light_4_0" tl="center_traffic_light" linkIndex="4" dir="r" state="o"/>
+    <connection from="right_to_center" to="center_to_left" fromLane="0" toLane="0" via=":center_traffic_light_5_0" tl="center_traffic_light" linkIndex="5" dir="s" state="o"/>
+    <connection from="right_to_center" to="center_to_bottom" fromLane="0" toLane="0" via=":center_traffic_light_6_0" tl="center_traffic_light" linkIndex="6" dir="l" state="o"/>
+    <connection from="right_to_center" to="center_to_right" fromLane="0" toLane="0" via=":center_traffic_light_7_0" tl="center_traffic_light" linkIndex="7" dir="t" state="o"/>
+    <connection from="right_to_topright" to="topright_to_top" fromLane="0" toLane="0" keepClear="0" via=":top_right_turn_0_0" dir="l" state="M"/>
+    <connection from="right_to_topright" to="topright_to_right" fromLane="0" toLane="0" via=":top_right_turn_1_0" dir="t" state="m"/>
+    <connection from="topLeft_to_left" to="left_to_bottomleft" fromLane="0" toLane="0" via=":left_traffic_light_0_0" tl="left_traffic_light" linkIndex="0" dir="s" state="O"/>
+    <connection from="topLeft_to_left" to="left_to_center" fromLane="0" toLane="0" via=":left_traffic_light_1_0" tl="left_traffic_light" linkIndex="1" dir="l" state="o"/>
+    <connection from="topLeft_to_left" to="Left_to_topLeft" fromLane="0" toLane="0" via=":left_traffic_light_2_0" tl="left_traffic_light" linkIndex="2" dir="t" state="o"/>
+    <connection from="topLeft_to_top" to="top_to_center" fromLane="0" toLane="0" via=":top_traffic_light_6_0" tl="top_traffic_light" linkIndex="6" dir="r" state="O"/>
+    <connection from="topLeft_to_top" to="top_to_topright" fromLane="0" toLane="0" via=":top_traffic_light_7_0" tl="top_traffic_light" linkIndex="7" dir="s" state="O"/>
+    <connection from="topLeft_to_top" to="top_to_topLeft" fromLane="0" toLane="0" via=":top_traffic_light_8_0" tl="top_traffic_light" linkIndex="8" dir="t" state="o"/>
+    <connection from="top_to_center" to="center_to_left" fromLane="0" toLane="0" via=":center_traffic_light_0_0" tl="center_traffic_light" linkIndex="0" dir="r" state="O"/>
+    <connection from="top_to_center" to="center_to_bottom" fromLane="0" toLane="0" via=":center_traffic_light_1_0" tl="center_traffic_light" linkIndex="1" dir="s" state="O"/>
+    <connection from="top_to_center" to="center_to_right" fromLane="0" toLane="0" via=":center_traffic_light_2_0" tl="center_traffic_light" linkIndex="2" dir="l" state="o"/>
+    <connection from="top_to_center" to="center_to_top" fromLane="0" toLane="0" via=":center_traffic_light_3_0" tl="center_traffic_light" linkIndex="3" dir="t" state="o"/>
+    <connection from="top_to_topLeft" to="topLeft_to_left" fromLane="0" toLane="0" via=":top_left_turn_0_0" dir="l" state="M"/>
+    <connection from="top_to_topright" to="topright_to_right" fromLane="0" toLane="0" keepClear="0" via=":top_right_turn_2_0" dir="r" state="M"/>
+    <connection from="top_to_topright" to="topright_to_top" fromLane="0" toLane="0" via=":top_right_turn_3_0" dir="t" state="m"/>
+    <connection from="topright_to_right" to="right_to_center" fromLane="0" toLane="0" via=":right_traffic_light_0_0" tl="right_traffic_light" linkIndex="0" dir="r" state="O"/>
+    <connection from="topright_to_right" to="right_to_bottomright" fromLane="0" toLane="0" via=":right_traffic_light_1_0" tl="right_traffic_light" linkIndex="1" dir="s" state="O"/>
+    <connection from="topright_to_right" to="right_to_topright" fromLane="0" toLane="0" via=":right_traffic_light_2_0" tl="right_traffic_light" linkIndex="2" dir="t" state="o"/>
+    <connection from="topright_to_top" to="top_to_topLeft" fromLane="0" toLane="0" via=":top_traffic_light_0_0" tl="top_traffic_light" linkIndex="0" dir="s" state="O"/>
+    <connection from="topright_to_top" to="top_to_center" fromLane="0" toLane="0" via=":top_traffic_light_1_0" tl="top_traffic_light" linkIndex="1" dir="l" state="o"/>
+    <connection from="topright_to_top" to="top_to_topright" fromLane="0" toLane="0" via=":top_traffic_light_2_0" tl="top_traffic_light" linkIndex="2" dir="t" state="o"/>
+
+    <connection from=":bottom_left_turn_0" to="bottomleft_to_bottom" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":bottom_left_turn_1" to="bottomLeft_to_left" fromLane="0" toLane="0" via=":bottom_left_turn_4_0" dir="t" state="m"/>
+    <connection from=":bottom_left_turn_4" to="bottomLeft_to_left" fromLane="0" toLane="0" dir="t" state="M"/>
+    <connection from=":bottom_left_turn_2" to="bottomLeft_to_left" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":bottom_left_turn_3" to="bottomleft_to_bottom" fromLane="0" toLane="0" via=":bottom_left_turn_5_0" dir="t" state="m"/>
+    <connection from=":bottom_left_turn_5" to="bottomleft_to_bottom" fromLane="0" toLane="0" dir="t" state="M"/>
+    <connection from=":bottom_right_turn_0" to="bottomright_to_bottom" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":bottom_right_turn_1" to="bottomright_to_right" fromLane="0" toLane="0" via=":bottom_right_turn_4_0" dir="t" state="m"/>
+    <connection from=":bottom_right_turn_4" to="bottomright_to_right" fromLane="0" toLane="0" dir="t" state="M"/>
+    <connection from=":bottom_right_turn_2" to="bottomright_to_right" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":bottom_right_turn_3" to="bottomright_to_bottom" fromLane="0" toLane="0" via=":bottom_right_turn_5_0" dir="t" state="m"/>
+    <connection from=":bottom_right_turn_5" to="bottomright_to_bottom" fromLane="0" toLane="0" dir="t" state="M"/>
+    <connection from=":bottom_traffic_light_0" to="bottom_to_bottomLeft" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":bottom_traffic_light_1" to="bottom_to_bottomRight" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":bottom_traffic_light_2" to="bottom_to_center" fromLane="0" toLane="0" via=":bottom_traffic_light_9_0" dir="t" state="m"/>
+    <connection from=":bottom_traffic_light_9" to="bottom_to_center" fromLane="0" toLane="0" dir="t" state="M"/>
+    <connection from=":bottom_traffic_light_3" to="bottom_to_center" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":bottom_traffic_light_4" to="bottom_to_bottomLeft" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":bottom_traffic_light_5" to="bottom_to_bottomRight" fromLane="0" toLane="0" via=":bottom_traffic_light_10_0" dir="t" state="m"/>
+    <connection from=":bottom_traffic_light_10" to="bottom_to_bottomRight" fromLane="0" toLane="0" dir="t" state="M"/>
+    <connection from=":bottom_traffic_light_6" to="bottom_to_bottomRight" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":bottom_traffic_light_7" to="bottom_to_center" fromLane="0" toLane="0" via=":bottom_traffic_light_11_0" dir="l" state="m"/>
+    <connection from=":bottom_traffic_light_11" to="bottom_to_center" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":bottom_traffic_light_8" to="bottom_to_bottomLeft" fromLane="0" toLane="0" via=":bottom_traffic_light_12_0" dir="t" state="m"/>
+    <connection from=":bottom_traffic_light_12" to="bottom_to_bottomLeft" fromLane="0" toLane="0" dir="t" state="M"/>
+    <connection from=":center_traffic_light_0" to="center_to_left" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":center_traffic_light_1" to="center_to_bottom" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":center_traffic_light_2" to="center_to_right" fromLane="0" toLane="0" via=":center_traffic_light_16_0" dir="l" state="m"/>
+    <connection from=":center_traffic_light_16" to="center_to_right" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":center_traffic_light_3" to="center_to_top" fromLane="0" toLane="0" via=":center_traffic_light_17_0" dir="t" state="m"/>
+    <connection from=":center_traffic_light_17" to="center_to_top" fromLane="0" toLane="0" dir="t" state="M"/>
+    <connection from=":center_traffic_light_4" to="center_to_top" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":center_traffic_light_5" to="center_to_left" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":center_traffic_light_6" to="center_to_bottom" fromLane="0" toLane="0" via=":center_traffic_light_18_0" dir="l" state="m"/>
+    <connection from=":center_traffic_light_18" to="center_to_bottom" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":center_traffic_light_7" to="center_to_right" fromLane="0" toLane="0" via=":center_traffic_light_19_0" dir="t" state="m"/>
+    <connection from=":center_traffic_light_19" to="center_to_right" fromLane="0" toLane="0" dir="t" state="M"/>
+    <connection from=":center_traffic_light_8" to="center_to_right" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":center_traffic_light_9" to="center_to_top" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":center_traffic_light_10" to="center_to_left" fromLane="0" toLane="0" via=":center_traffic_light_20_0" dir="l" state="m"/>
+    <connection from=":center_traffic_light_20" to="center_to_left" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":center_traffic_light_11" to="center_to_bottom" fromLane="0" toLane="0" via=":center_traffic_light_21_0" dir="t" state="m"/>
+    <connection from=":center_traffic_light_21" to="center_to_bottom" fromLane="0" toLane="0" dir="t" state="M"/>
+    <connection from=":center_traffic_light_12" to="center_to_bottom" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":center_traffic_light_13" to="center_to_right" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":center_traffic_light_14" to="center_to_top" fromLane="0" toLane="0" via=":center_traffic_light_22_0" dir="l" state="m"/>
+    <connection from=":center_traffic_light_22" to="center_to_top" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":center_traffic_light_15" to="center_to_left" fromLane="0" toLane="0" via=":center_traffic_light_23_0" dir="t" state="m"/>
+    <connection from=":center_traffic_light_23" to="center_to_left" fromLane="0" toLane="0" dir="t" state="M"/>
+    <connection from=":left_traffic_light_0" to="left_to_bottomleft" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":left_traffic_light_1" to="left_to_center" fromLane="0" toLane="0" via=":left_traffic_light_9_0" dir="l" state="m"/>
+    <connection from=":left_traffic_light_9" to="left_to_center" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":left_traffic_light_2" to="Left_to_topLeft" fromLane="0" toLane="0" via=":left_traffic_light_10_0" dir="t" state="m"/>
+    <connection from=":left_traffic_light_10" to="Left_to_topLeft" fromLane="0" toLane="0" dir="t" state="M"/>
+    <connection from=":left_traffic_light_3" to="Left_to_topLeft" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":left_traffic_light_4" to="left_to_bottomleft" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":left_traffic_light_5" to="left_to_center" fromLane="0" toLane="0" via=":left_traffic_light_11_0" dir="t" state="m"/>
+    <connection from=":left_traffic_light_11" to="left_to_center" fromLane="0" toLane="0" dir="t" state="M"/>
+    <connection from=":left_traffic_light_6" to="left_to_center" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":left_traffic_light_7" to="Left_to_topLeft" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":left_traffic_light_8" to="left_to_bottomleft" fromLane="0" toLane="0" via=":left_traffic_light_12_0" dir="t" state="m"/>
+    <connection from=":left_traffic_light_12" to="left_to_bottomleft" fromLane="0" toLane="0" dir="t" state="M"/>
+    <connection from=":right_traffic_light_0" to="right_to_center" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":right_traffic_light_1" to="right_to_bottomright" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":right_traffic_light_2" to="right_to_topright" fromLane="0" toLane="0" via=":right_traffic_light_9_0" dir="t" state="m"/>
+    <connection from=":right_traffic_light_9" to="right_to_topright" fromLane="0" toLane="0" dir="t" state="M"/>
+    <connection from=":right_traffic_light_3" to="right_to_topright" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":right_traffic_light_4" to="right_to_center" fromLane="0" toLane="0" via=":right_traffic_light_10_0" dir="l" state="m"/>
+    <connection from=":right_traffic_light_10" to="right_to_center" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":right_traffic_light_5" to="right_to_bottomright" fromLane="0" toLane="0" via=":right_traffic_light_11_0" dir="t" state="m"/>
+    <connection from=":right_traffic_light_11" to="right_to_bottomright" fromLane="0" toLane="0" dir="t" state="M"/>
+    <connection from=":right_traffic_light_6" to="right_to_bottomright" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":right_traffic_light_7" to="right_to_topright" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":right_traffic_light_8" to="right_to_center" fromLane="0" toLane="0" via=":right_traffic_light_12_0" dir="t" state="m"/>
+    <connection from=":right_traffic_light_12" to="right_to_center" fromLane="0" toLane="0" dir="t" state="M"/>
+    <connection from=":top_left_turn_0" to="topLeft_to_left" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":top_left_turn_1" to="topLeft_to_top" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":top_right_turn_0" to="topright_to_top" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":top_right_turn_1" to="topright_to_right" fromLane="0" toLane="0" via=":top_right_turn_4_0" dir="t" state="m"/>
+    <connection from=":top_right_turn_4" to="topright_to_right" fromLane="0" toLane="0" dir="t" state="M"/>
+    <connection from=":top_right_turn_2" to="topright_to_right" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":top_right_turn_3" to="topright_to_top" fromLane="0" toLane="0" via=":top_right_turn_5_0" dir="t" state="m"/>
+    <connection from=":top_right_turn_5" to="topright_to_top" fromLane="0" toLane="0" dir="t" state="M"/>
+    <connection from=":top_traffic_light_0" to="top_to_topLeft" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":top_traffic_light_1" to="top_to_center" fromLane="0" toLane="0" via=":top_traffic_light_9_0" dir="l" state="m"/>
+    <connection from=":top_traffic_light_9" to="top_to_center" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":top_traffic_light_2" to="top_to_topright" fromLane="0" toLane="0" via=":top_traffic_light_10_0" dir="t" state="m"/>
+    <connection from=":top_traffic_light_10" to="top_to_topright" fromLane="0" toLane="0" dir="t" state="M"/>
+    <connection from=":top_traffic_light_3" to="top_to_topright" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":top_traffic_light_4" to="top_to_topLeft" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":top_traffic_light_5" to="top_to_center" fromLane="0" toLane="0" via=":top_traffic_light_11_0" dir="t" state="m"/>
+    <connection from=":top_traffic_light_11" to="top_to_center" fromLane="0" toLane="0" dir="t" state="M"/>
+    <connection from=":top_traffic_light_6" to="top_to_center" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":top_traffic_light_7" to="top_to_topright" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":top_traffic_light_8" to="top_to_topLeft" fromLane="0" toLane="0" via=":top_traffic_light_12_0" dir="t" state="m"/>
+    <connection from=":top_traffic_light_12" to="top_to_topLeft" fromLane="0" toLane="0" dir="t" state="M"/>
+
+</net>
